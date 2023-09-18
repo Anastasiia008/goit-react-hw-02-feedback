@@ -8,6 +8,8 @@ import Feedback from './Feedback/Feedback';
 
 import  Section  from './Section/Section';
 
+import css from './App.module.css';
+
 class App extends Component {
   state = {
     good: 0,
@@ -37,7 +39,7 @@ class App extends Component {
     const options = Object.keys(this.state);
 
     return (
-      <div >
+      <div className={css.container}>
         <Section title="Please leave feedback">
           <Feedback
             options={options}
